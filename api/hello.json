@@ -1,4 +1,0 @@
-export default function handler(req, res) {
-  const nome = req.body?.nome || "Visitante";
-  res.status(200).json({ resposta: `Olá, ${nome}!` });
-}
