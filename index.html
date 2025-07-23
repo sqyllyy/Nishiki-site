@@ -1,96 +1,84 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nishiki</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: #1c1c1c;
-      font-family: 'Segoe UI', sans-serif;
-      color: #fff;
-      text-align: center;
-    }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nishiki</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #1c1c1c;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      text-align: center;
+    }
 
-    h1 {
-      font-size: 48px;
-      margin-top: 30px;
-      color: #C58C45;
-    }
+    h1 {
+      font-size: 48px;
+      margin-top: 40px;
+      color: #C58C45;
+    }
 
-    p.description {
-      font-size: 18px;
-      max-width: 600px;
-      margin: 10px auto 40px auto;
-      color: #d1b070;
-      line-height: 1.5;
-    }
+    .circle-img {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 30px auto;
+      border: 4px solid #C58C45;
+      box-shadow: 0 0 20px #C58C45aa;
+    }
 
-    .circle-img {
-      width: 220px;
-      height: 220px;
-      border-radius: 50%;
-      overflow: hidden;
-      margin: 30px auto 0 auto;
-      border: 4px solid #C58C45;
-      box-shadow: 0 0 20px #C58C45aa;
-    }
+    .circle-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 
-    .circle-img img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+      margin-top: 40px;
+    }
 
-    .buttons {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      align-items: center;
-      margin-top: 40px;
-    }
+    .buttons a {
+      text-decoration: none;
+      color: white;
+      padding: 14px 28px;
+      background: linear-gradient(135deg, #C58C45, #a36b2e);
+      border: none;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 16px;
+      box-shadow: 0 4px 10px #00000055;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      touch-action: manipulation;
+    }
 
-    .buttons a {
-      text-decoration: none;
-      color: white;
-      padding: 14px 28px;
-      background: linear-gradient(135deg, #C58C45, #a36b2e);
-      border: none;
-      border-radius: 30px;
-      font-weight: bold;
-      font-size: 16px;
-      box-shadow: 0 4px 10px #00000055;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-      touch-action: manipulation;
-    }
-
-    /* Efeito ao passar o mouse ou tocar */
-    .buttons a:hover,
-    .buttons a:active {
-      transform: scale(1.08);
-      box-shadow: 0 6px 16px #C58C4599;
-    }
-  </style>
+    /* Efeito ao passar o mouse ou tocar */
+    .buttons a:hover,
+    .buttons a:active {
+      transform: scale(1.08);
+      box-shadow: 0 6px 16px #C58C4599;
+    }
+  </style>
 </head>
 <body>
 
-  <div class="circle-img">
-    <img src="nishio_nishiki_by_vv_ave_de3bkso-414w-2x.jpg" alt="Imagem do Nishiki" />
-  </div>
+  <h1>Nishiki</h1>
 
-  <h1>Nishiki</h1>
+  <div class="circle-img">
+    <img src="nishio_nishiki_by_vv_ave_de3bkso-414w-2x.jpg" alt="Imagem do Nishiki">
+  </div>
 
-  <p class="description">
-    Nishiki Nishio é um personagem marcante, conhecido por sua personalidade complexa e estilo único. Inspirado em elementos modernos e tradicionais, ele representa força, coragem e autenticidade.
-  </p>
-
-  <div class="buttons">
-    <a href="privacy.html" target="_blank">Política de Privacidade</a>
-    <a href="terms.html" target="_blank">Termos de Uso</a>
-    <a href="https://discord.com" target="_blank">Entrar no Discord</a>
-  </div>
+  <div class="buttons">
+    <a href="politica.html" target="_blank">Política de Privacidade</a>
+    <a href="termos.html" target="_blank">Termos de Uso</a>
+    <a href="https://discord.com" target="_blank">Entrar no Discord</a>
+  </div>
 
 </body>
 </html>
