@@ -5,12 +5,13 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: "Método não permitido" });
   }
 
-  const prompt = req.body?.prompt;
+  const { prompt } = req.body;
+
   if (!prompt) {
     return res.status(400).json({ error: "Falta o campo 'prompt' no corpo" });
   }
 
-  const apiKey = process.env.chat; // variável 'chat' que você configurou
+  const apiKey = process.env.OPENAI_API_KEY; // aqui usa a variável correta
   if (!apiKey) {
     return res.status(500).json({ error: "API key não configurada" });
   }
@@ -32,7 +33,7 @@ export default async function handler(req, res) {
 
     const data = await response.json();
 
-    if (!data.choices || !data.choices[0]) {
+    if (!data.choices || !data.choices.length) {
       return res.status(500).json({ error: "Sem resposta da OpenAI" });
     }
 
