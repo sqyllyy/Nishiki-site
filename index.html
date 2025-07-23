@@ -8,8 +8,12 @@
     body {
       margin: 0;
       padding: 0;
-      background: url('https://cdn.discordapp.com/banners/1385014563510161530/8adf57ed38378e6a5c6e5e9b284973fd.webp?size=4096') no-repeat center center fixed;
-      background-size: cover;
+      /* Fundo degradê escuro */
+      background:
+        radial-gradient(circle at 20% 20%, rgba(197, 140, 69, 0.15), transparent 40%),
+        radial-gradient(circle at 80% 80%, rgba(163, 107, 46, 0.15), transparent 30%),
+        linear-gradient(135deg, #1c1c1c 0%, #121212 100%);
+      background-blend-mode: overlay;
       font-family: 'Segoe UI', sans-serif;
       color: #fff;
       text-align: center;
@@ -76,9 +80,9 @@
   </div>
 
   <div class="buttons">
-    <a href="privacy.html" target="_blank">Política de Privacidade</a>
-    <a href="terms.html" target="_blank">Termos de Uso</a>
-    <a href="https://discord.com/oauth2/authorize?client_id=1385014563510161530" target="_blank">Entrar no Discord</a>
+    <a href="politica.html" target="_blank">Política de Privacidade</a>
+    <a href="termos.html" target="_blank">Termos de Uso</a>
+    <a href="https://discord.com" target="_blank">Entrar no Discord</a>
   </div>
 
 </body>
