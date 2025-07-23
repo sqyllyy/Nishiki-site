@@ -3,83 +3,46 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nishiki - Bot para Discord</title>
+  <title>Nishiki</title>
   <style>
-    :root {
-      --nishiki: #C58C45;
-      --bg: #0d0d0d;
-      --text: #f2f2f2;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: var(--bg);
-      color: var(--text);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      background: #1c1c1c;
+      color: #fff;
       text-align: center;
-      padding: 2rem;
+      padding: 40px 20px;
     }
 
     h1 {
-      font-size: 3rem;
-      color: var(--nishiki);
-      margin-bottom: 1rem;
+      color: #C58C45;
+      font-size: 48px;
+      margin-bottom: 30px;
     }
 
-    p {
-      font-size: 1.2rem;
-      max-width: 600px;
-      margin-bottom: 2rem;
-      color: #ccc;
+    .circle-img {
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto;
+      border: 4px solid #C58C45;
+      box-shadow: 0 0 20px #C58C45aa;
     }
 
-    .buttons {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    a.button {
-      background-color: var(--nishiki);
-      color: var(--bg);
-      padding: 0.8rem 1.6rem;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s ease;
-    }
-
-    a.button:hover {
-      background-color: #a36a2e;
-    }
-
-    footer {
-      position: absolute;
-      bottom: 1rem;
-      font-size: 0.9rem;
-      color: #666;
+    .circle-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
   </style>
 </head>
 <body>
   <h1>Nishiki</h1>
-  <p>Um bot multifuncional para Discord com economia, diversão, utilidades e moderação. Simples, poderoso e estiloso.</p>
-  <div class="buttons">
-    <a href="https://discord.com/oauth2/authorize?client_id=1385014563510161530&scope=bot&permissions=8" class="button">Convidar</a>
-    <a href="/politica" class="button">Privacidade</a>
-    <a href="/termos" class="button">Termos</a>
+
+  <div class="circle-img">
+    <img src="nishio_nishiki_by_vv_ave_de3bkso-414w-2x.jpg" alt="Imagem do Nishiki" />
   </div>
-  <footer>© 2025 Nishiki Bot</footer>
+
 </body>
 </html>
