@@ -1,4 +1,4 @@
 {
-  mensagem: "oi"
-  sucesso true
+  "mensagem": "oi"
+  "sucesso": true
 }
