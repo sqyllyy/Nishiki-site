@@ -3,55 +3,70 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Comandos - Nishiki</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Comandos do Nishiki</title>
   <style>
     body {
-      background-color: #0d0d0d;
       font-family: Arial, sans-serif;
-      color: #ffffff;
+      background-color: #fff8f0;
+      color: #333;
       margin: 0;
       padding: 20px;
     }
     h1 {
       text-align: center;
-      color: #ffffff;
+      color: #C58C45;
     }
     .status-help {
-      text-align: center;
-      margin-bottom: 30px;
-      font-size: 16px;
-      color: #cccccc;
+      background: linear-gradient(135deg, #fef7ef, #f5e2cc);
+      border: 2px solid #C58C45;
+      border-radius: 12px;
+      padding: 15px 20px;
+      max-width: 400px;
+      margin: 20px auto 40px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .status-help div {
+      display: flex;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+    .status-help div:last-child {
+      margin-bottom: 0;
     }
     .status-help img {
-      height: 20px;
-      vertical-align: middle;
-      margin-right: 8px;
+      height: 22px;
+      margin-right: 10px;
+    }
+    .commands-section {
+      max-width: 800px;
+      margin: 0 auto;
     }
     .category {
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
     .category h2 {
-      border-bottom: 2px solid #555;
+      color: #C58C45;
+      border-bottom: 2px solid #C58C45;
       padding-bottom: 5px;
-      color: #ffa500;
     }
-    .commands {
+    .command-list {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
+      margin-top: 10px;
     }
     .command {
-      background-color: #1a1a1a;
-      border: 1px solid #333;
-      padding: 10px 15px;
+      background: #fff;
+      border: 1px solid #ccc;
       border-radius: 8px;
-      font-size: 14px;
+      padding: 8px 12px;
       transition: transform 0.2s ease;
+      cursor: pointer;
     }
     .command:hover {
-      transform: scale(1.1);
-      background-color: #292929;
+      transform: scale(1.05);
+      background: #fdf3e6;
     }
   </style>
 </head>
@@ -59,56 +74,64 @@
   <h1>Comandos do Nishiki</h1>
 
   <div class="status-help">
-    <p>
-      <img src="commands/1389004901664817153.png" alt="Funcionando">Funcionando normalmente &nbsp;&nbsp;
-      <img src="commands/1389004967913979955.png" alt="Manutenção">Em manutenção &nbsp;&nbsp;
-      <img src="commands/1389005044279672832.png" alt="Desligado">Desligado
-    </p>
-  </div>
-
-  <div class="category">
-    <h2>💰 Economia</h2>
-    <div class="commands">
-      <div class="command">n.atm</div>
-      <div class="command">n.work</div>
-      <div class="command">n.daily</div>
-      <div class="command">n.prefeitura</div>
-      <div class="command">n.info</div>
-      <div class="command">n.emprego</div>
-      <div class="command">n.pay</div>
+    <div>
+      <img src="commands/1389004901664817153.png" alt="Funcionando">
+      <span>Funcionando normalmente</span>
+    </div>
+    <div>
+      <img src="commands/1389004967913979955.png" alt="Manutenção">
+      <span>Manutenção</span>
+    </div>
+    <div>
+      <img src="commands/1389005044279672832.png" alt="Desligado">
+      <span>Desativado</span>
     </div>
   </div>
 
-  <div class="category">
-    <h2>🎮 Diversão</h2>
-    <div class="commands">
-      <div class="command">n.stonks</div>
-      <div class="command">n.drip</div>
-      <div class="command">n.perfil</div>
-      <div class="command">n.copo</div>
-      <div class="command">n.texto</div>
-      <div class="command">n.choose</div>
+  <div class="commands-section">
+    <div class="category">
+      <h2>💰 Economia</h2>
+      <div class="command-list">
+        <div class="command">n.atm</div>
+        <div class="command">n.work</div>
+        <div class="command">n.daily</div>
+        <div class="command">n.prefeitura</div>
+        <div class="command">n.info</div>
+        <div class="command">n.emprego</div>
+        <div class="command">n.pay</div>
+      </div>
+    </div>
+
+    <div class="category">
+      <h2>🎮 Diversão</h2>
+      <div class="command-list">
+        <div class="command">n.stonks</div>
+        <div class="command">n.drip</div>
+        <div class="command">n.perfil</div>
+        <div class="command">n.copo</div>
+        <div class="command">n.texto</div>
+        <div class="command">n.choose</div>
+      </div>
+    </div>
+
+    <div class="category">
+      <h2>🛠️ Utilidades</h2>
+      <div class="command-list">
+        <div class="command">n.ping</div>
+        <div class="command">n.help</div>
+        <div class="command">n.botinfo</div>
+        <div class="command">n.avatar</div>
+        <div class="command">n.banner</div>
+        <div class="command">n.servericon</div>
+        <div class="command">n.alterarbio</div>
+        <div class="command">n.uptime</div>
+      </div>
+    </div>
+
+    <div class="category">
+      <h2>🛡️ Moderação</h2>
+      <p>Infelizmente estamos em manutenção com os comandos de moderação, recomendo aguardar.</p>
     </div>
   </div>
-
-  <div class="category">
-    <h2>🛠️ Utilidades</h2>
-    <div class="commands">
-      <div class="command">n.ping</div>
-      <div class="command">n.help</div>
-      <div class="command">n.botinfo</div>
-      <div class="command">n.avatar</div>
-      <div class="command">n.banner</div>
-      <div class="command">n.servericon</div>
-      <div class="command">n.alterarbio</div>
-      <div class="command">n.uptime</div>
-    </div>
-  </div>
-
-  <div class="category">
-    <h2>🛡️ Moderação</h2>
-    <p style="color: #ffaa00; padding-left: 10px;">Infelizmente estamos em manutenção com os comandos de moderação, recomendo aguardar.</p>
-  </div>
-
 </body>
 </html>
